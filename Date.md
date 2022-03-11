@@ -32,6 +32,26 @@ console.log(b);
 
 2021년 2월 28일을 기대했으나 3월로 넘어갔다.
 
+js-joda를 사용하면 기대한 날짜를 얻을 수 있다.
+
+```javascript
+const a = LocalDate.parse("2008-02-29");
+const b = d.plusYears(1);
+console.log(b);
+// LocalDate { _year: 2009, _month: 2, _day: 28 }
+
+const c = convert(b).toDate();
+console.log(c);
+// 2009-02-27T15:00:00.000Z
+// 이는 2009년 2월 28일을 00:00:00 을 의미한다
+
+const d = new Date('2009-02-27T15:00:00.000Z');
+console.log(d);
+// Sat Feb 28 2009 00:00:00 GMT+0900 (한국 표준시)
+```
+
+
+
 <br>
 
 월이 아니라 일을 더하는 경우에는 (제대로된 날짜를 대입했을 경우) 제대로 결과가 나온다.
