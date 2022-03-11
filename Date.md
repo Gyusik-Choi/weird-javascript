@@ -43,14 +43,26 @@ console.log(b);
 const c = convert(b).toDate();
 console.log(c);
 // 2009-02-27T15:00:00.000Z
-// 이는 2009년 2월 28일을 00:00:00 을 의미한다
+```
 
-const d = new Date('2009-02-27T15:00:00.000Z');
-console.log(d);
+<br>
+
+위 c 변수의 값을 보니 조금 특이해 보인다. c는 b의 값을 자바스크립트의 Date 객체로 변환해준 값을 갖는다. 
+
+'2009-02-27T15:00:00.000Z'의 T와 Z가 15:00:00.000 사이에 쓰였는데, 이는 UTC(Universal Time Coordinated) 시간을 나타낸다.
+
+한국은 UTC 기준으로 9시간이 앞서있어서 한국의 시간은 15에서 9를 더해줘야 하고 이는 00:00:00.000이 되므로 2009년 2월 28일을 의미하게 된다.
+
+```javascript
+new Date('2009-02-27T15:00:00.000Z')
 // Sat Feb 28 2009 00:00:00 GMT+0900 (한국 표준시)
 ```
 
+<br>
 
+위의 GMT+0900은 GMT(Greenwich Mean Time) 시간을 나타낸다. GMT 시간보다 9시간 앞서있다는 의미를 갖는다.
+
+GMT는 UTC와 우리가 구분하기 어려울 정도의 시간 차이가 존재하고 사실상 거의 같은 시간을 나타낸다고 볼 수 있다.
 
 <br>
 
@@ -91,3 +103,13 @@ console.log(a)
 https://jojoldu.tistory.com/600
 
 https://js-joda.github.io/js-joda/
+
+https://pks2974.medium.com/javascript-%EC%99%80-date-%EB%82%A0%EC%A7%9C-cf638c05f8f3
+
+https://ongamedev.tistory.com/388
+
+https://meetup.toast.com/posts/125
+
+https://ko.wikipedia.org/wiki/%ED%98%91%EC%A0%95_%EC%84%B8%EA%B3%84%EC%8B%9C
+
+https://ko.wikipedia.org/wiki/%EA%B7%B8%EB%A6%AC%EB%8B%88%EC%B9%98_%ED%8F%89%EA%B7%A0%EC%8B%9C
