@@ -7,7 +7,7 @@
 ```javascript
 const a = new Date('2008-1-31');
 const b = new Date(a.setMonth(a.getMonth() + 1));
-console.log(a)
+console.log(a);
 console.log(b);
 // Sun Mar 02 2008 00:00:00 GMT+0900 (한국 표준시)
 // Sun Mar 02 2008 00:00:00 GMT+0900 (한국 표준시)
@@ -22,7 +22,7 @@ console.log(b);
 ```javascript
 const a = new Date('2020-2-29');
 const b = new Date(a.setYear(a.getYear() + 1));
-console.log(a)
+console.log(a);
 console.log(b);
 // Sat Mar 01 0121 00:00:00 GMT+0827 (한국 표준시)
 // Sat Mar 01 0121 00:00:00 GMT+0827 (한국 표준시)
@@ -32,11 +32,24 @@ console.log(b);
 
 2021년 2월 28일을 기대했으나 3월로 넘어갔다.
 
+<br>
+
 js-joda를 사용하면 기대한 날짜를 얻을 수 있다.
 
 ```javascript
+const a = LocalDate.parse("2008-01-31");
+const b = a.plusMonths(1);
+console.log(a);
+console.log(b);
+// LocalDate { _year: 2008, _month: 1, _day: 31 }
+// LocalDate { _year: 2008, _month: 2, _day: 29 }
+```
+
+
+
+```javascript
 const a = LocalDate.parse("2008-02-29");
-const b = d.plusYears(1);
+const b = a.plusYears(1);
 console.log(b);
 // LocalDate { _year: 2009, _month: 2, _day: 28 }
 
@@ -71,7 +84,7 @@ GMT는 UTC와 우리가 구분하기 어려울 정도의 시간 차이가 존재
 ```javascript
 const a = new Date('2008-1-31');
 const b = new Date(a.setDate(a.getDate() + 1));
-console.log(a)
+console.log(a);
 console.log(b);
 // Fri Feb 01 2008 00:00:00 GMT+0900 (한국 표준시)
 // Fri Feb 01 2008 00:00:00 GMT+0900 (한국 표준시)
@@ -84,7 +97,7 @@ console.log(b);
 ```javascript
 const a = new Date('2022-1-32');
 const b = new Date(a.setDate(a.getDate() + 1));
-console.log(b)
+console.log(b);
 // Invalid Date
 ```
 
@@ -92,7 +105,7 @@ console.log(b)
 
 ```javascript
 const a = new Date('2022-1-32');
-console.log(a)
+console.log(a);
 // Invalid Date
 ```
 
