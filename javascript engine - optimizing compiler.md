@@ -42,7 +42,7 @@ C++ 는 compilation 과 execution 이 별개로 이루어진다면 JavaScript �
 
 아래는 [구글 V8 팀 멤버의 발표](https://www.youtube.com/watch?v=p-iiEDtpy6I) 11분 20초 즈음에 나온 이미지다.
 
-![optimizing compiler](images/optimizing compiler.PNG)
+![optimizing_compiler](images/optimizing_compiler.PNG)
 
 <br>
 
@@ -50,7 +50,7 @@ C++ 는 compilation 과 execution 이 별개로 이루어진다면 JavaScript �
 
 아래는 [구글 V8 팀 멤버의 발표](https://www.youtube.com/watch?v=p-iiEDtpy6I) 12분 50초 즈음에 나온 이미지다.
 
-![v8 optimizing compiler](images/v8 optimizing compiler.PNG)
+![v8_optimizing_compiler](images/v8_optimizing_compiler.PNG)
 
 baseline compiler 에 대응되는 v8 의 baseline compiler 는 Ignition 이 담당한다.
 
