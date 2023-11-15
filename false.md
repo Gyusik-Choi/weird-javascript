@@ -31,7 +31,7 @@ console.log(a[0] == false)
 ```javascript
 let a = [0]
 if (!a[0]) {
-	console.log(0)
+  console.log(0)
 } else {
   console.log(1)
 }
