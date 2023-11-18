@@ -34,8 +34,6 @@ C++ 는 compilation 과 execution 이 별개로 이루어진다면 JavaScript �
 
 > de-optimize if the type has changed
 
-
-
 <br>
 
 #### JavaScript engine flow
